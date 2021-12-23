@@ -509,7 +509,7 @@
                 {
                     padding-top: 195px;
                 }
-                .main-content
+                #main-content
                 {
                     z-index: 2;
                     position: relative;
@@ -691,6 +691,124 @@
                     align-items: center;
                     margin-top: 50px;
                 }
+                #pg .product-lists .column, #x .product-lists.column
+                {
+                    padding: 0;
+                }
+                #pg .product-lists .product-card::after, #x .product-lists .product-card::after {
+                    height: 50px;
+                    width: 67px;
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    bottom: 16px;
+                    background-size: auto;
+                    background-size: contain;
+                    transition: .2s all ease-in;
+                    opacity: 0;
+                }
+                #pg .product-lists .product-card.dotted-bg::before, #x .product-lists .product-card.dotted-bg::before {
+                    top: -84px;
+                    left: -177px;
+                    right: unset;
+                    transform: none;
+                }
+                .dotted-bg::before {
+                    height: 167px;
+                    width: 233px;
+                    content: '';
+                    background-image: url("images/dotted-bg.png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    z-index: -1;
+                    position: absolute;
+                }
+                #pg .product-lists .product-card, #x .product-lists .product-card {
+                    width: 316px;
+                    height: 226px;
+                    margin-top: 56px;
+                    position: relative;
+                    cursor: pointer;
+                    font-size: 20px;
+                }
+                #pg .product-card .corner-content,  #x .product-card .corner-content, #pg .pre-info .corner-content, #x .pre-info .corner-content {
+                    top: -9px;
+                    position: absolute;
+                    right: -10px;
+                    height: 80px;
+                    width: 80px;
+                    clip-path: polygon(0 0,100% 0,100% 100%,67% 100%,0 33%);
+                }
+                #pg .product-card .corner-content .corner-icon, #x .product-card .corner-content .corner-icon, #pg .pre-info .corner-content .corner-icon, #x .pre-info .corner-content .corner-icon {
+                    background: #3987f0;
+                    border-radius: 50%;
+                    height: 50px;
+                    width: 50px;
+                    position: relative;
+                    top: 19px;
+                    transition: 0s all ease-in;
+                    left: 9px;
+                }
+                #pg .product-lists .product-card, #x .product-lists .product-card {
+                    cursor: pointer;
+                    font-size: 20px;
+                }
+                 #pg .product-card .corner-content .corner-icon img, #x .product-card .corner-content .corner-icon img,  #pg .pre-info .corner-content .corner-icon img, #x .pre-info .corner-content .corner-icon img {
+                    width: 50px;
+                    position: relative;
+                    top: 2px;
+                }
+                #main-content img {
+                    display: block;
+                    margin: 0 auto;
+                }
+                .lazy.loaded {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                #pg .product-card .svg-corner,  #x .product-card .svg-corner, #pg .pre-info .svg-corner, #x .pre-info .svg-corner {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    -webkit-transition: .1s all ease-in;
+                    transition: .1s all ease-in;
+                }
+                #pg .product-lists .product-card, #x .product-lists .product-card {
+                    cursor: pointer;
+                    font-size: 20px;
+                }
+                #pg .product-card .svg-corner .border, #x .product-card .svg-corner .border, #pg .pre-info .svg-corner .border, #x .pre-info .svg-corner .border {
+                    transition: .1s all ease-in;
+                }
+               #pg .product-lists .product-card .content,#x .product-lists .product-card .content {
+                    height: 100%;
+                    width: 100%;
+                    padding: 32px 24px 32px 32px;
+                }
+                #pg .product-lists .product-card .content .title, 
+                #x .product-lists .product-card .content .title {
+                    letter-spacing: -.01em;
+                    color: #102562;
+                    font-weight: 800;
+                    margin-bottom: 24px;
+                    line-height: 110%;
+                }
+                #pg .product-lists .product-card .content .desc, #x .product-lists .product-card .content .desc {
+                    color: #7c8297;
+                    line-height: 150%;
+                    font-size: 16px;
+                }
+                #pg .product-lists .product-card .content .learn-more,#x .product-lists .product-card .content .learn-more {
+                    bottom: 34px;
+                    position: absolute;
+                    transition: .1s all ease-in;
+                    font-size: 16px;
+                    line-height: 150%;
+                }
+                .text-pri {
+                    color: #528ff0;
+                }
             </style>
     </head>
     <body class="signup raz">
@@ -796,8 +914,44 @@
                                 </div>
                             </a>
                         </div>
+                        
                     </div>
-                    
+                    <div class="product-lists">
+                        <div class="columns">
+                            <div class="column">
+                                <div class ="product-card dotted-bg">
+                                <div class="corner-content">
+                                    <div class="corner-icon">
+                                        <img class="lazy loaded" src="images/payment-links.svg">
+                                    </div>
+                                </div>
+                                <svg class="svg-corner svg-desktop" xmlns="http://www.w3.org/2000/svg" 
+                                width="316" height="226" fill="none">
+                                <path d="M0 219.511V6a6 6 0 016-6h216.883a16 16 0 0111.301 4.673l77.117 76.937A16.002 16.002 0 01316 92.937v127.054a6 6 0 01-6.009 6l-304-.48a6 6 0 01-5.991-6z" fill=#fff></path>
+                                <path border="M.5 219.511V6A5.5 5.5 0 016 .5h216.883c4.105 0 8.042 1.628 10.948 4.527l77.116 76.937a15.499 15.499 0 014.553 10.973v127.054a5.501 5.501 0 01-5.509 5.5l-304-.48a5.5 5.5 0 01-5.491-5.5z" stroke="#04093F" stroke-opacity="0.05"></path>
+                                </svg>
+                                <a class="lj-event" href="https://razorpay.com/payment-links/">
+                                    <div class="content">
+                                        <div class="title">
+                                            Payment Links
+                                        </div>
+                                        <div class="desc nomob">
+                                            Share payment link via an email, SMS, messenger, chatbot etc. and get paid immediately
+                                        </div>
+                                        <div class="learn-more text-pri bold">Know More</div>
+                                        <i class="i-arrow-forward-ios">
+                                        </i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                        </div>
+                        <div class="columns">
+                            
+                        </div>
+                    </div>
                 </section>
                 </div>
         <footer>
