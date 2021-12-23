@@ -307,6 +307,15 @@
                     position: absolute;
                     margin: 30px 0 0 -30px;
                 }
+                #banner h1 {
+                     color: #fff;
+                    font-size: 40px;
+                    line-height: 53px;
+                }
+                .pre 
+                {
+                    white-space: pre-line;
+                }
                 #banner-figure {
                         top: -23px;
                 }
@@ -357,12 +366,7 @@
                     flex: 1 1 0;
                     max-width: 100%;
                 }
-                .pre {
-                    color: #fff;
-                    font-size: 40px;
-                    line-height: 53px;
-                    white-space: pre;
-                }
+                
                 .size-lg{
                     margin-bottom: 32px;
                     max-width: 390px;
@@ -435,7 +439,6 @@
                     left: 93%;
                     transform-origin: 0 100%;
                     z-index: -2;
-                    background: #02042b;
                     color: #02042b;
                     background: linear-gradient(45deg,#02042b,#02042b 50%);
                 }
@@ -448,12 +451,19 @@
                 #banner::before {
                         display: none;
                 }
+                #banner .container {
+                    height: 100%;
+                }
                 #banner {
                         position: relative;
                         padding: 0;
                         height: 580px;
                         min-height: 580px;
                     }
+                    #banner .header {
+                        z-index: 1;
+                    }
+                   
                 .container.dotted-bg::before {
                         z-index: -2;
                         position: absolute;
@@ -481,11 +491,7 @@
                         background: #58c19c;
                         margin-top: 30px;
                         margin-bottom: 30px;
-                    }
-                    #banner h1 {
-                        color: #fff;
-                        font-size: 40px;
-                        line-height: 53px;
+                        white-space: pre;
                     }
                 main h1, main h2 {
                    font-weight: 800;
@@ -566,7 +572,7 @@
                     color: #132763;
                     font-weight: bold;
                 }
-                #pg .pre-info ul.list, #home #x .pre-info ul.list {
+                #pg .pre-info ul.list, #x .pre-info ul.list {
                     display: inline-block;
                     margin-top: 41px;
                     margin-bottom: 0;
@@ -578,7 +584,7 @@
                     padding: 0;
                     margin:0;
                 }
-                #pg .pre-info ul.list li::before, #home #x .pre-info ul.list li::before
+                #pg .pre-info ul.list li::before, #x .pre-info ul.list li::before
                 {
                     top: 4px;
                     border-color: #75d7b7;
@@ -743,7 +749,7 @@
                     <div class="container content columns">
                         <div class="left-content column">
                             <div class="header">
-                                <h1 class="pre">Power your finance, 
+                                <h1 class="pre">Power your finance,
                                     grow your business</h1>
                                 <p class="size-lg">Accept payments from customers.
                                     Automate payouts to vendors &amp; employees.
