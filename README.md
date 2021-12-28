@@ -1,2 +1,1 @@
-##HTML&CSS example
-# arunaji007.github.io
+# HTML&CSS example
