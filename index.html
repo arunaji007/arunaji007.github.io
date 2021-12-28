@@ -51,16 +51,15 @@
                     box-sizing: border-box;
                     outline: none;  
                 }
-                .container {
-                    padding-left: 24px;
-                    padding-right: 24px;
-                } 
+                 
                 .container {
                     width: 100%;
                     max-width: 1080px;
                     margin: 0 auto;
                     position: relative;
                     padding: 0 10px;   
+                    padding-left: 24px;
+                    padding-right: 24px;
                 }
                 nav .raz-logo {
                     float: left;
@@ -105,6 +104,7 @@
                 #nav.new-navbar .nav-item span {
                         transition: all .2s;
                 }      
+                #nav.ne-navbar
                 #nav.new-navbar .nav-item:hover > span
                 {
                     text-shadow: #528ff0;
@@ -343,6 +343,9 @@
                     background: no-repeat left top;
                     background-size: contain;
                 }
+                #banner a {
+                    color: #5590f0;
+                }
                 img {
                     max-height: 100%;
                     max-width: 100%;
@@ -389,12 +392,13 @@
                 }
                 .button-anchor .button-anchor-wrapper {
                     border-radius: 3px;
+                    padding: 10px 18px;
+                    height: 48px;
                     background: #fff;
                     position: relative;
                     font-weight: bold;
                     transition: .2s;
                     display: flex;
-                    -webkit-box-orient: horizontal;
                     -webkit-box-direction: normal;
                     flex-direction: row;
                     -webkit-box-pack: center;
@@ -472,15 +476,7 @@
                         right: unset;
                         top: unset;
                         transform: none;
-                    }
-                .dotted-bg::before {
-                        height: 167px;
-                        width: 233px;
-                        content: '';
-                        background-image: url("images/dotted-bg.png");
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                    }   
+                    } 
                     main h1:not(.no-puck)::after, main h2:not(.no-puck)::after {
                         content: '';
                         display: block;
@@ -526,6 +522,11 @@
                     background: #49dab5;
                     margin-top: 16px;
                 }
+                h2 {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                
                 .center{
                     text-align: center;
                     margin-right: auto;
@@ -544,7 +545,7 @@
                     right: -178px;
                     transform: rotate(180deg);
                 }
-                #pg .pre-info, #x .pre-info {
+                #pg .pre-info {
                     position: relative;
                     margin-top: 80px;
                     border-radius: 6px;
@@ -566,13 +567,24 @@
                 .pre-info .title span {
                     color: #3281ff;
                 }
-                #pg .pre-info .title, #x .pre-info .title {
+                #pg .pre-info .title
+                {
+                    color: #132763;
+                }
+                #pg .pre-info .title,#x .pre-info .title {
                     font-size: 28px;
                     line-height: 150%;
-                    color: #132763;
+                    max-width: 510px;
                     font-weight: bold;
                 }
-                #pg .pre-info ul.list, #x .pre-info ul.list {
+                #x h2 {
+                    color: #fff;
+                }
+                #x .pre-info .title
+                {
+                    color: #fff;
+                }
+                #pg .pre-info ul.list {
                     display: inline-block;
                     margin-top: 41px;
                     margin-bottom: 0;
@@ -584,7 +596,7 @@
                     padding: 0;
                     margin:0;
                 }
-                #pg .pre-info ul.list li::before, #x .pre-info ul.list li::before
+                #pg .pre-info ul.list li::before,#x .pre-info ul.list li::before
                 {
                     top: 4px;
                     border-color: #75d7b7;
@@ -592,7 +604,7 @@
                     height: 11px;
                     margin-left: -36px
                 }
-                .list li::before, .list li.column::before {
+                .list li::before,#x .list li.column::before {
                     content: '';
                     transform: rotate(45deg) translate(7px,2px);
                     border: 2px solid #0bffc1; 
@@ -605,7 +617,7 @@
                     float: left;
                     margin: -1px 0 0 -16px;
                 }
-                #pg .pre-info ul.list li,   #x .pre-info ul.list li {
+                #pg .pre-info ul.list li,#x .pre-info ul.list li {
                     margin: 0;
                     padding-left: 36px;
                 }
@@ -615,12 +627,12 @@
                 li {
                      list-style: none;
                 }
-                #pg .pre-info ul.list, #x .pre-info ul.list {
+                #pg .pre-info ul.list,#x   .pre-info ul.list {
                     color: rgba(13,36,98,0.8);
                     font-size: 16px;
                     line-height: 200%;
                 }
-                #pg .pre-info .btn-list .button-anchor-wrapper, #x .pre-info .btn-list .button-anchor-wrapper {
+                #pg .pre-info .btn-list .button-anchor-wrapper,#x  .pre-info .btn-list .button-anchor-wrapper {
                     height: 53px;
                     padding: 10px 27px;
                     font-size: 16px;
@@ -641,10 +653,10 @@
                     text-transform: none;
                     display: inline-block;
                 }
-                #pg .pre-info .btn-list .button-anchor-wrapper.arrow i, #x .pre-info .btn-list .button-anchor-wrapper.arrow i {
+                #pg .pre-info .btn-list .button-anchor-wrapper.arrow i,#x .pre-info .btn-list .button-anchor-wrapper.arrow i {
                     font-size: 18px;
                 }
-                #pg .pre-info .btn-list .learn-more, #x .pre-info .btn-list .learn-more {
+                #pg .pre-info .btn-list .learn-more,#x .pre-info .btn-list .learn-more {
                     display: inline-block;
                     margin-left: 40px;
                 }
@@ -657,7 +669,7 @@
                     text-transform: none;
                     display: inline-block;
                 }
-                #pg .learn-more, #x .learn-more {
+                #pg .learn-more, #x  .learn-more {
                     cursor: pointer;
                     font-size: 16px;
                 }
@@ -670,17 +682,17 @@
                 .i-arrow-forward-ios::before {
                     content: "\ea03";
                 }
-                #pg .pre-info .btn-list .learn-more .i-arrow-forward-ios, #x .pre-info .btn-list .learn-more .i-arrow-forward-ios {
+                #pg .pre-info .btn-list .learn-more .i-arrow-forward-ios,#x .pre-info .btn-list .learn-more .i-arrow-forward-ios {
                     position: relative;
                     top: 0;
                     left: -1px;
                 }
-                #pg .i-arrow-forward-ios, #x .i-arrow-forward-ios {
+                #pg .i-arrow-forward-ios,#x .i-arrow-forward-ios {
                     padding-left: 10px;
                     font-size: 13px;
                     color: #528ff0;
                 }
-                #pg .pre-info .btn-list, #x .pre-info .btn-list {
+                #pg .pre-info .btn-list,#x .pre-info .btn-list {
                     display: flex;
                     -webkit-box-orient: horizontal;
                     -webkit-box-direction: normal;
@@ -691,39 +703,33 @@
                     align-items: center;
                     margin-top: 50px;
                 }
-                #pg .product-lists .column, #x .product-lists.column
+                #pg .product-lists .column,#x .product-lists.column
                 {
                     padding: 0;
                 }
-                #pg .product-lists .product-card::after, #x .product-lists .product-card::after {
+                 #pg .product-lists .column:last-child .product-card,#x .product-lists .column:last-child .product-card {
+                    margin-left: auto;
+                }
+                #pg .product-lists .product-card::after,#x .product-lists .product-card::after {
                     height: 50px;
                     width: 67px;
                     content: '';
                     position: absolute;
                     right: 0;
                     bottom: 16px;
+                    background: url("images/wave-bg.svg") no-repeat;
                     background-size: auto;
                     background-size: contain;
                     transition: .2s all ease-in;
                     opacity: 0;
                 }
-                #pg .product-lists .product-card.dotted-bg::before, #x .product-lists .product-card.dotted-bg::before {
+                #pg .product-lists .product-card.dotted-bg::before{
                     top: -84px;
                     left: -177px;
                     right: unset;
                     transform: none;
                 }
-                .dotted-bg::before {
-                    height: 167px;
-                    width: 233px;
-                    content: '';
-                    background-image: url("images/dotted-bg.png");
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    z-index: -1;
-                    position: absolute;
-                }
-                #pg .product-lists .product-card, #x .product-lists .product-card {
+                #pg .product-lists .product-card,#x .product-lists .product-card {
                     width: 316px;
                     height: 226px;
                     margin-top: 56px;
@@ -731,7 +737,7 @@
                     cursor: pointer;
                     font-size: 20px;
                 }
-                #pg .product-card .corner-content,  #x .product-card .corner-content, #pg .pre-info .corner-content, #x .pre-info .corner-content {
+                #pg .product-card .corner-content,#x .product-card .corner-content, #pg .pre-info .corner-content,   .pre-info .corner-content {
                     top: -9px;
                     position: absolute;
                     right: -10px;
@@ -739,7 +745,7 @@
                     width: 80px;
                     clip-path: polygon(0 0,100% 0,100% 100%,67% 100%,0 33%);
                 }
-                #pg .product-card .corner-content .corner-icon, #x .product-card .corner-content .corner-icon, #pg .pre-info .corner-content .corner-icon, #x .pre-info .corner-content .corner-icon {
+                #pg .product-card .corner-content .corner-icon,#x .product-card .corner-content .corner-icon, #pg .pre-info .corner-content .corner-icon,#x .pre-info .corner-content .corner-icon {
                     background: #3987f0;
                     border-radius: 50%;
                     height: 50px;
@@ -749,16 +755,16 @@
                     transition: 0s all ease-in;
                     left: 9px;
                 }
-                #pg .product-lists .product-card, #x .product-lists .product-card {
+                #pg .product-lists .product-card,#x .product-lists .product-card {
                     cursor: pointer;
                     font-size: 20px;
                 }
-                 #pg .product-card .corner-content .corner-icon img, #x .product-card .corner-content .corner-icon img,  #pg .pre-info .corner-content .corner-icon img, #x .pre-info .corner-content .corner-icon img {
+                 #pg .product-card .corner-content .corner-icon img,#x .product-card .corner-content .corner-icon img,  #pg .pre-info .corner-content .corner-icon img,#x .pre-info .corner-content .corner-icon img {
                     width: 50px;
                     position: relative;
                     top: 2px;
                 }
-                #main-content img {
+                .corner-icon img {
                     display: block;
                     margin: 0 auto;
                 }
@@ -766,7 +772,7 @@
                     opacity: 1;
                     visibility: visible;
                 }
-                #pg .product-card .svg-corner,  #x .product-card .svg-corner, #pg .pre-info .svg-corner, #x .pre-info .svg-corner {
+                #pg .product-card .svg-corner, #x .product-card .svg-corner, #pg .pre-info .svg-corner,   .pre-info .svg-corner {
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -774,11 +780,11 @@
                     -webkit-transition: .1s all ease-in;
                     transition: .1s all ease-in;
                 }
-                #pg .product-lists .product-card, #x .product-lists .product-card {
+                #pg .product-lists .product-card,#x .product-lists .product-card {
                     cursor: pointer;
                     font-size: 20px;
                 }
-                #pg .product-card .svg-corner .border, #x .product-card .svg-corner .border, #pg .pre-info .svg-corner .border, #x .pre-info .svg-corner .border {
+                #pg .product-card .svg-corner .border,#x .product-card .svg-corner .border, #pg .pre-info .svg-corner .border,#x .pre-info .svg-corner .border {
                     transition: .1s all ease-in;
                 }
                #pg .product-lists .product-card .content,#x .product-lists .product-card .content {
@@ -787,15 +793,19 @@
                     padding: 32px 24px 32px 32px;
                 }
                 #pg .product-lists .product-card .content .title, 
-                #x .product-lists .product-card .content .title {
+                  #x .product-lists .product-card .content .title {
                     letter-spacing: -.01em;
-                    color: #102562;
                     font-weight: 800;
                     margin-bottom: 24px;
                     line-height: 110%;
                 }
-                #pg .product-lists .product-card .content .desc, #x .product-lists .product-card .content .desc {
-                    color: #7c8297;
+                #pg .product-lists .product-card .content .title{
+                    color: #102562;
+                }
+                #pg .product-lists .product-card .content .desc{
+                color: #7c8297;
+            }
+                #pg .product-lists .product-card .content .desc,#x .product-lists .product-card .content .desc {
                     line-height: 150%;
                     font-size: 16px;
                 }
@@ -809,6 +819,150 @@
                 .text-pri {
                     color: #528ff0;
                 }
+                #pg .product-lists .product-card .i-arrow-forward-ios, #x .product-lists .product-card .i-arrow-forward-ios{
+                    bottom: 34px;
+                    position: absolute;
+                    left: 112px;
+                    font-size: 12pxx;
+                }
+                #x
+                {
+                    padding-top: 275px;
+                    position: relative;
+                }
+                #x .dark-bg
+                {
+                    top: 10px;
+                    left: 50%;
+                    margin-left: -1500px;
+                    position: absolute;
+                    z-index: -1;
+                }
+                #x svg.dark-bg {
+                    top: 10px;
+                    left: 50%;
+                    margin-left: -1500px;
+                    position: absolute;
+                    z-index: -1;
+                }
+                #x .pre-info::after
+                {
+                    background-image: url("images/x-current-bottom.png");
+                    right:  -170px;
+                    height: 282px;
+                    width: 234px;
+                    bottom: 0;
+                    left: unset;
+                    top: unset
+                }
+                #x .pre-info::before, #x .pre-info::after {
+                    content: '';
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    z-index: -1;
+                    position: absolute;
+                }
+                #x .pre-info::before{
+                    height: 238px;
+                    width: 291px;
+                    content: '';
+                    background-image: url("images/x-current-top.png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    z-index: -1;
+                    position: absolute;
+                    top: -142px;
+                    left: -134px;
+                }
+                #x .pre-info {
+                    background-image: url("images/x-graphic.png");
+                    border: 1px solid rgba(255,255,255,0.2);
+                    background-color: #181c2e;
+                }
+                #x .pre-info {
+                    position: relative;
+                    margin-top: 80px;
+                    border-radius: 6px;
+                    padding: 40px 40px 53px 40px;
+                    background: url("images/pg-graphic.png") no-repeat;
+                    background-position-x: right;
+                    background-position-y: center;
+                    background-size: contain;
+                }   
+                #x .pre-info .title img {
+                    font-size: 28px;
+                    line-height: 150%;
+                    max-width: 510px;
+                    font-weight: bold;
+                }
+                #x .pre-info .title img {
+                    display: inline-block;
+                    margin-right: 9px;
+                    width: 168px;
+                }
+                .lazy.loaded {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                #x .pre-info ul.list li::before {
+                    color: #00ffb6;
+                }
+                #x .pre-info ul.list {
+                    display: inline-block;
+                    margin-top: 41px;
+                    margin-bottom: 0;
+                    color: rgba(13,36,98,0.8);
+                    font-size: 16px;
+                    line-height: 200%;
+                }
+                #x .pre-info ul.list li::before {
+                    top: 4px;
+                    border-color: #75d7b7;
+                    width: 4px;
+                    height: 11px;
+                    margin-left: -36px;
+                }
+                #x .pre-info ul.list li
+                {
+                    color: rgba(255,255,255,0.8);
+                }
+                #x .pre-info ul.list li{
+                    margin: 0;
+                    padding-left: 36px;
+                }
+                #x .product-lists .column
+                {
+                    padding: 0;
+                }
+                #x .product-lists .product-card::after {
+                    background-image: url("images/wave-x.svg");
+                    transform: none;
+                    bottom: 5px;
+                    width: 110px;
+                    right: -5px;
+                    height: 76px;
+                }
+                #x .product-lists .product-card .content .title {
+                    color: #fff;
+                }
+                #x .product-lists .product-card .content .desc {
+                    color: rgba(255,255,255,0.6);
+                }
+                #x .learn-more {
+                    color: #3281ff !important;
+                }
+                #x .product-lists .disclaimer
+                {
+                    color:rgba(255,255,255,0.6);
+                }
+                main p {
+                      margin: 24px 0;
+                }
+                #fake-chat-icon .chat-icon::before
+                {
+                    width: 65%;
+                    top:6px;
+                }
             </style>
     </head>
     <body class="signup raz">
@@ -821,6 +975,81 @@
                     <ul>
                         <li class="nav-item nav-menu nav1 inactive">
                             <span class="nav-category">Payments</span>
+                            <div class="sub payments-sub">
+                                <div class="content upper-content">
+                                    <div class="columns">
+                                        <div class="columns">
+                                            <h4>Accept Payments</h4>
+                                            <ul>
+                                                <li>
+                                                    <a class="nav-link" href="https://razorpay.com/payment-gateway">
+                                                    <img class="nav-icon lazy loaded" src="images/payment-links.svg">
+                                                    <div>
+                                                        <div class="link pg">
+                                                            Payment Gateway
+                                                            <i class="i i-arrow-forward-ios forward-icon">
+                                                            </i>
+                                                        </div>
+                                                        <p>
+                                                            Payments on your Website & App
+                                                        </p>
+                                                    </div>
+                                                    </img>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link" href="https://razorpay.com/payment-gateway">
+                                                        <img class="nav-icon lazy loaded" src="images/payment-links.svg">
+                                                        <div>
+                                                            <div class="link pg">
+                                                                Payment Gateway
+                                                                <i class="i i-arrow-forward-ios forward-icon">
+                                                                </i>
+                                                            </div>
+                                                            <p>
+                                                                Payments on your Website & App
+                                                            </p>
+                                                        </div>
+                                                        </img>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link" href="https://razorpay.com/payment-gateway">
+                                                        <img class="nav-icon lazy loaded" src="images/payment-links.svg">
+                                                        <div>
+                                                            <div class="link pg">
+                                                                Payment Gateway
+                                                                <i class="i i-arrow-forward-ios forward-icon">
+                                                                </i>
+                                                            </div>
+                                                            <p>
+                                                                Payments on your Website & App
+                                                            </p>
+                                                        </div>
+                                                        </img>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link" href="https://razorpay.com/payment-gateway">
+                                                        <img class="nav-icon lazy loaded" src="images/payment-links.svg">
+                                                        <div>
+                                                            <div class="link pg">
+                                                                Payment Gateway
+                                                                <i class="i i-arrow-forward-ios forward-icon">
+                                                                </i>
+                                                            </div>
+                                                            <p>
+                                                                Payments on your Website & App
+                                                            </p>
+                                                        </div>
+                                                        </img>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item nav-menu nav2 inactive">
                             <span class="nav-category">Banking Plus</span>
@@ -928,7 +1157,8 @@
                                 <svg class="svg-corner svg-desktop" xmlns="http://www.w3.org/2000/svg" 
                                 width="316" height="226" fill="none">
                                 <path d="M0 219.511V6a6 6 0 016-6h216.883a16 16 0 0111.301 4.673l77.117 76.937A16.002 16.002 0 01316 92.937v127.054a6 6 0 01-6.009 6l-304-.48a6 6 0 01-5.991-6z" fill=#fff></path>
-                                <path border="M.5 219.511V6A5.5 5.5 0 016 .5h216.883c4.105 0 8.042 1.628 10.948 4.527l77.116 76.937a15.499 15.499 0 014.553 10.973v127.054a5.501 5.501 0 01-5.509 5.5l-304-.48a5.5 5.5 0 01-5.491-5.5z" stroke="#04093F" stroke-opacity="0.05"></path>
+                                <path class ="border" d="M.5 219.511V6A5.5 5.5 0 016 .5h216.883c4.105 0 8.042 1.628 10.948 4.527l77.116 76.937a15.499 15.499 0 014.553 10.973v127.054a5.501 5.501 0 01-5.509 5.5l-304-.48a5.5 5.5 0 01-5.491-5.5z" 
+                                    stroke="#04093F" stroke-opacity="0.05"></path>
                                 </svg>
                                 <a class="lj-event" href="https://razorpay.com/payment-links/">
                                     <div class="content">
@@ -944,16 +1174,289 @@
                                     </div>
                                 </a>
                             </div>
+                            </div>
+                            <div class="column">
+                            <div class ="product-card dotted-bg">
+                            <div class="corner-content">
+                                <div class="corner-icon">
+                                    <img class="lazy loaded" src="images/payment-pages.svg">
+                                </div>
+                            </div>
+                            <svg class="svg-corner svg-desktop" xmlns="http://www.w3.org/2000/svg" 
+                            width="316" height="226" fill="none">
+                            <path d="M0 219.511V6a6 6 0 016-6h216.883a16 16 0 0111.301 4.673l77.117 76.937A16.002 16.002 0 01316 92.937v127.054a6 6 0 01-6.009 6l-304-.48a6 6 0 01-5.991-6z" fill=#fff></path>
+                            <path class ="border" d="M.5 219.511V6A5.5 5.5 0 016 .5h216.883c4.105 0 8.042 1.628 10.948 4.527l77.116 76.937a15.499 15.499 0 014.553 10.973v127.054a5.501 5.501 0 01-5.509 5.5l-304-.48a5.5 5.5 0 01-5.491-5.5z" 
+                                stroke="#04093F" stroke-opacity="0.05"></path>
+                            </svg>
+                            <a class="lj-event" href="https://razorpay.com/payment-pages/">
+                                <div class="content">
+                                    <div class="title">
+                                        Payment Pages
+                                    </div>
+                                    <div class="desc nomob">
+                                        Take your store online instantly with zero coding. Accept international & domestic payments
+                                    </div>
+                                    <div class="learn-more text-pri bold">Know More</div>
+                                    <i class="i-arrow-forward-ios">
+                                    </i>
+                                </div>
+                            </a>
                         </div>
-                            <div class="column"></div>
-                            <div class="column"></div>
+                            </div>
+                            <div class="column">
+                            <div class ="product-card dotted-bg">
+                            <div class="corner-content">
+                                <div class="corner-icon">
+                                    <img class="lazy loaded" src="images/buttons.svg">
+                                </div>
+                            </div>
+                            <svg class="svg-corner svg-desktop" xmlns="http://www.w3.org/2000/svg" 
+                            width="316" height="226" fill="none">
+                            <path d="M0 219.511V6a6 6 0 016-6h216.883a16 16 0 0111.301 4.673l77.117 76.937A16.002 16.002 0 01316 92.937v127.054a6 6 0 01-6.009 6l-304-.48a6 6 0 01-5.991-6z" fill=#fff></path>
+                            <path class ="border" d="M.5 219.511V6A5.5 5.5 0 016 .5h216.883c4.105 0 8.042 1.628 10.948 4.527l77.116 76.937a15.499 15.499 0 014.553 10.973v127.054a5.501 5.501 0 01-5.509 5.5l-304-.48a5.5 5.5 0 01-5.491-5.5z" 
+                                stroke="#04093F" stroke-opacity="0.05"></path>
+                            </svg>
+                            <a class="lj-event" href="https://razorpay.com/payment-buttons/">
+                                <div class="content">
+                                    <div class="title">
+                                        Payment Buttons
+                                    </div>
+                                    <div class="desc nomob">
+                                        Create, Copy & Collect With Payment Button. Collect one time or subscription payments & more
+                                    </div>
+                                    <div class="learn-more text-pri bold">Know More</div>
+                                    <i class="i-arrow-forward-ios">
+                                    </i>
+                                </div>
+                            </a>
+                        </div>
+                            </div>
                         </div>
                         <div class="columns">
-                            
+                            <div class="column">
+                                <div class ="product-card dotted-bg">
+                                <div class="corner-content">
+                                    <div class="corner-icon">
+                                        <img class="lazy loaded" src="images/subscriptions.svg">
+                                    </div>
+                                </div>
+                                <svg class="svg-corner svg-desktop" xmlns="http://www.w3.org/2000/svg" 
+                                width="316" height="226" fill="none">
+                                <path d="M0 219.511V6a6 6 0 016-6h216.883a16 16 0 0111.301 4.673l77.117 76.937A16.002 16.002 0 01316 92.937v127.054a6 6 0 01-6.009 6l-304-.48a6 6 0 01-5.991-6z" fill=#fff></path>
+                                <path class ="border" d="M.5 219.511V6A5.5 5.5 0 016 .5h216.883c4.105 0 8.042 1.628 10.948 4.527l77.116 76.937a15.499 15.499 0 014.553 10.973v127.054a5.501 5.501 0 01-5.509 5.5l-304-.48a5.5 5.5 0 01-5.491-5.5z" 
+                                    stroke="#04093F" stroke-opacity="0.05"></path>
+                                </svg>
+                                <a class="lj-event" href="https://razorpay.com/subscriptions/">
+                                    <div class="content">
+                                        <div class="title">
+                                            Subscriptions
+                                        </div>
+                                        <div class="desc nomob">
+                                            Subscription plans with automated recurring transactions on various payment modes.
+                                        </div>
+                                        <div class="learn-more text-pri bold">Know More</div>
+                                        <i class="i-arrow-forward-ios">
+                                        </i>
+                                    </div>
+                                </a>
+                            </div>
+                            </div>
+                            <div class="column">
+                            <div class ="product-card dotted-bg">
+                            <div class="corner-content">
+                                <div class="corner-icon">
+                                    <img class="lazy loaded" src="images/route.svg">
+                                </div>
+                            </div>
+                            <svg class="svg-corner svg-desktop" xmlns="http://www.w3.org/2000/svg" 
+                            width="316" height="226" fill="none">
+                            <path d="M0 219.511V6a6 6 0 016-6h216.883a16 16 0 0111.301 4.673l77.117 76.937A16.002 16.002 0 01316 92.937v127.054a6 6 0 01-6.009 6l-304-.48a6 6 0 01-5.991-6z" fill=#fff></path>
+                            <path class ="border" d="M.5 219.511V6A5.5 5.5 0 016 .5h216.883c4.105 0 8.042 1.628 10.948 4.527l77.116 76.937a15.499 15.499 0 014.553 10.973v127.054a5.501 5.501 0 01-5.509 5.5l-304-.48a5.5 5.5 0 01-5.491-5.5z" 
+                                stroke="#04093F" stroke-opacity="0.05"></path>
+                            </svg>
+                            <a class="lj-event" href="https://razorpay.com/route/">
+                                <div class="content">
+                                    <div class="title">
+                                        Route
+                                    </div>
+                                    <div class="desc nomob">
+                                        Split incoming payments auto- matically to vendor’s accounts, manage marketplace money flow...
+                                    </div>
+                                    <div class="learn-more text-pri bold">Know More</div>
+                                    <i class="i-arrow-forward-ios">
+                                    </i>
+                                </div>
+                            </a>
+                        </div>
+                            </div>
+                            <div class="column">
+                            <div class ="product-card dotted-bg">
+                            <div class="corner-content">
+                                <div class="corner-icon">
+                                    <img class="lazy loaded" src="images/smart-collect.svg">
+                                </div>
+                            </div>
+                            <svg class="svg-corner svg-desktop" xmlns="http://www.w3.org/2000/svg" 
+                            width="316" height="226" fill="none">
+                            <path d="M0 219.511V6a6 6 0 016-6h216.883a16 16 0 0111.301 4.673l77.117 76.937A16.002 16.002 0 01316 92.937v127.054a6 6 0 01-6.009 6l-304-.48a6 6 0 01-5.991-6z" fill=#fff></path>
+                            <path class ="border" d="M.5 219.511V6A5.5 5.5 0 016 .5h216.883c4.105 0 8.042 1.628 10.948 4.527l77.116 76.937a15.499 15.499 0 014.553 10.973v127.054a5.501 5.501 0 01-5.509 5.5l-304-.48a5.5 5.5 0 01-5.491-5.5z" 
+                                stroke="#04093F" stroke-opacity="0.05"></path>
+                            </svg>
+                            <a class="lj-event" href="https://razorpay.com/smart-collect/">
+                                <div class="content">
+                                    <div class="title">
+                                        Smart Collect
+                                    </div>
+                                    <div class="desc nomob">
+                                        Automatically reconcile incoming NEFT, RTGS, IMPS, UPI payments using Virtual Accounts & UPI-IDs
+                                    </div>
+                                    <div class="learn-more text-pri bold">Know More</div>
+                                    <i class="i-arrow-forward-ios">
+                                    </i>
+                                </div>
+
+                            </a>
+                        </div>
+                            </div>
                         </div>
                     </div>
                 </section>
+                <section id="x">
+                    <svg class="dark-bg" width="3001" height="1597" fill="none">
+                        <path d="M3001 264.5L0 0v1597l3001-507.5v-825z" fill="#181C2E"></path>
+                        <path d="M897.5 1240.5l658 94.5L272 1552l625.5-311.5z" fill="#F4F8FF"></path>
+                    </svg>
+                    <div class="container">
+                        <h2 class="nomob center">
+                            Explore Business Banking powered by RazorpayX
+                        </h2>
+                        <div class="pre-info">
+                            <div class="title">
+                                Supercharge your company’s banking and finances with 
+                            <img class="lazy loaded" alt="razor x logo" src="images/razorpayX-logo.svg">
+                        </div>
+                        
+                        <ul class="list">
+                            <li>Open a fully digital current account.</li>
+                            <li>Automate payables & compliment payments</li>
+                            <li>Simplify and track spends with Corporate cards</li>
+                            <li>View financial insights at a glance</li>
+                        </ul>
+
+                        <div class="btn-list">
+                            <a class="button-anchor signupCTA" href="https://dashboard.razorpay.com/signup">
+                                <div class="button-anchor-wrapper blue arrow">
+                                    <span>Sign Up</span>
+                                    <i class="i-arrow-forward"></i>
+                                </div>
+                            </a>
+                            <a class="lj-event" href="https://razorpay.com/payment-gateway/">
+                                <div class="learn-more text-pri bold" bold  >Know More
+                                    <i class="i-arrow-forward-ios">
+                                    </i>
+                                </div>
+                            </a>
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div class="product-lists">
+                        <div class="columns">
+                            <div class ="column">
+                                <div class ="product-card">
+                                    <div class="corner-content">
+                                        <div class="corner-icon">
+                                            <img class="lazy loaded" src="images/current-account.svg">
+                                        </div>
+                                    </div>
+                                    <svg class="svg-corner svg-desktop" xmlns="http://www.w3.org/2000/svg" 
+                                    width="316" height="226" fill="none">
+                                    <path d="M0 219.511V6a6 6 0 016-6h216.883a16 16 0 0111.301 4.673l77.117 76.937A16.002 16.002 0 01316 92.937v127.054a6 6 0 01-6.009 6l-304-.48a6 6 0 01-5.991-6z" fill="#181C2E"></path>
+                                    <path class ="border" d="M.5 219.511V6A5.5 5.5 0 016 .5h216.883c4.105 0 8.042 1.628 10.948 4.527l77.116 76.937a15.499 15.499 0 014.553 10.973v127.054a5.501 5.501 0 01-5.509 5.5l-304-.48a5.5 5.5 0 01-5.491-5.5z" 
+                                        stroke="#fff" stroke-opacity="0.05"></path>
+                                    </svg>
+                                    <a class="lj-event" href="https://razorpay.com/current-accounts/">
+                                        <div class="content">
+                                            <div class="title">
+                                                Current Account
+                                            </div>
+                                            <div class="desc">
+                                                Current accounts, supercharged by RazorpayX, for fast-growing businesses 
+                                            </div>
+                                            <div class="learn-more text-pri bold">Know More</div>
+                                            <i class="i-arrow-forward-ios">
+                                            </i>
+                                        </div>
+                                    </a>
+                            </div>
+                            </div>
+                            <div class ="column">
+                                <div class ="product-card">
+                                    <div class="corner-content">
+                                        <div class="corner-icon">
+                                            <img class="lazy loaded" src="images/capital.svg">
+                                        </div>
+                                    </div>
+                                    <svg class="svg-corner svg-desktop" xmlns="http://www.w3.org/2000/svg" 
+                                    width="316" height="226" fill="none">
+                                    <path d="M0 219.511V6a6 6 0 016-6h216.883a16 16 0 0111.301 4.673l77.117 76.937A16.002 16.002 0 01316 92.937v127.054a6 6 0 01-6.009 6l-304-.48a6 6 0 01-5.991-6z" fill="#181C2E"></path>
+                                    <path class ="border" d="M.5 219.511V6A5.5 5.5 0 016 .5h216.883c4.105 0 8.042 1.628 10.948 4.527l77.116 76.937a15.499 15.499 0 014.553 10.973v127.054a5.501 5.501 0 01-5.509 5.5l-304-.48a5.5 5.5 0 01-5.491-5.5z" 
+                                        stroke="#fff" stroke-opacity="0.05"></path>
+                                    </svg>
+                                    <a class="lj-event" href="https://razorpay.com/capital/">
+                                        <div class="content">
+                                            <div class="title">
+                                                Capital & Credit
+                                            </div>
+                                            <div class="desc">
+                                                Instant additional cash and corporate cards designed for growing businesses 
+                                            </div>
+                                            <div class="learn-more text-pri bold">Know More</div>
+                                            <i class="i-arrow-forward-ios">
+                                            </i>
+                                        </div>
+                                    </a>
+                            </div>
+                        </div>
+                        <div class ="column">
+                            <div class ="product-card">
+                                <div class="corner-content">
+                                    <div class="corner-icon">
+                                        <img class="lazy loaded" src="images/payroll.svg">
+                                    </div>
+                                </div>
+                                <svg class="svg-corner svg-desktop" xmlns="http://www.w3.org/2000/svg" 
+                                width="316" height="226" fill="none">
+                                <path d="M0 219.511V6a6 6 0 016-6h216.883a16 16 0 0111.301 4.673l77.117 76.937A16.002 16.002 0 01316 92.937v127.054a6 6 0 01-6.009 6l-304-.48a6 6 0 01-5.991-6z" fill="#181C2E"></path>
+                                <path class ="border" d="M.5 219.511V6A5.5 5.5 0 016 .5h216.883c4.105 0 8.042 1.628 10.948 4.527l77.116 76.937a15.499 15.499 0 014.553 10.973v127.054a5.501 5.501 0 01-5.509 5.5l-304-.48a5.5 5.5 0 01-5.491-5.5z" 
+                                    stroke="#fff" stroke-opacity="0.05"></path>
+                                </svg>
+                                <a class="lj-event" href="https://razorpay.com/payroll/">
+                                    <div class="content">
+                                        <div class="title">
+                                            Payroll
+                                        </div>
+                                        <div class="desc">
+                                            Automate salary transfers, group medical insurance and pay PF, TDS, PT via a single dashboard.
+                                        </div>
+                                        <div class="learn-more text-pri bold">Know More</div>
+                                        <i class="i-arrow-forward-ios">
+                                        </i>
+                                    </div>
+                                </a>
+                        </div>
+                        </div>
+
+                    </div>  
+                    <div class="disclaimer">
+                        <p>Banking Services and Razorpay powered Current Account is provided by Scheduled Banks.</p>
+                    </div>  
+                    </div>
+                    </div>
+                </section>
                 </div>
+                
         <footer>
             <div class="container">
                 <div class="columns">
@@ -966,4 +1469,4 @@
         </main>
         </div>
     </body>
-</html>
+</html> 
